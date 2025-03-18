@@ -71,7 +71,3 @@ Ensure you have the following installed:
 
   ```bash
   ./RadarSimKF
-
-
-
-

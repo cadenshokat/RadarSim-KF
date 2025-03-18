@@ -22,10 +22,17 @@ RadarSim-KF simulates a radar system capable of detecting and tracking multiple 
 
 ## Features
 
-- **Real-Time Simulation**: Simulates radar sweeps and updates target positions in real-time.&#8203;:contentReference[oaicite:12]{index=12}
-- **Kalman Filtering**: :contentReference[oaicite:13]{index=13}&#8203;:contentReference[oaicite:14]{index=14}
-- **Multiple Target Tracking**: :contentReference[oaicite:15]{index=15}&#8203;:contentReference[oaicite:16]{index=16}
-- **Visualization**: :contentReference[oaicite:17]{index=17}&#8203;:contentReference[oaicite:18]{index=18}
+- **Real-Time Simulation**:  
+  Simulates radar sweeps in real-time, updating target positions with each new time step. The radar system dynamically tracks multiple targets, providing an up-to-date view of the targets' movements as the simulation progresses.
+
+- **Kalman Filtering**:  
+  Implements the **Kalman filter** algorithm to accurately track and predict the position and velocity of targets. By correcting noisy measurements, the filter improves the precision of the target's predicted path and ensures robust tracking even with uncertain data.
+
+- **Multiple Target Tracking**:  
+  Supports simultaneous tracking of multiple targets. Each target has its own independent Kalman filter to estimate its position and velocity, ensuring that the radar system can handle complex tracking scenarios with multiple moving objects.
+
+- **Visualization**:  
+  Provides a simple text-based radar visualization, where targets are represented by 'X' and empty space by '-'. Each radar sweep is displayed step-by-step, showing how targets move over time, which helps visualize the system's tracking capabilities.
 
 ## Getting Started
 
@@ -35,9 +42,9 @@ To get started with RadarSim-KF, follow the instructions below.
 
 Ensure you have the following installed:
 
-- **C++ Compiler**: :contentReference[oaicite:19]{index=19}&#8203;:contentReference[oaicite:20]{index=20}
-- **CMake**: :contentReference[oaicite:21]{index=21}&#8203;:contentReference[oaicite:22]{index=22}
-- **Git**: :contentReference[oaicite:23]{index=23}&#8203;:contentReference[oaicite:24]{index=24}
+- **C++ Compiler**: A C++ compiler that supports C++20 standards (e.g., GCC, Clang).
+- **CMake**: A tool for managing the build process and generating project files.
+- **Git**: A version control system to clone the repository and manage your code.
 
 ### Installation
 

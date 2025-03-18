@@ -11,7 +11,6 @@
   - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -46,28 +45,59 @@ Ensure you have the following installed:
 
    ```bash
    git clone https://github.com/yourusername/RadarSim-KF.git
+   ```
 
 2. **Navigate to the Project Directory**:
    
    ```bash
     cd RadarSim-KF
+   ```
 
 3. **Create a Build Directory**:
 
    ```bash
    mkdir build
    cd build
+   ```
    
 4. **Generate Build Files with CMake**:
    
    ```bash
    cmake ..
+   ```
   
 5. **Build the Project**:
    ```bash
    make
+   ```
    
 6. **Run the Simulation**:
 
-  ```bash
-  ./RadarSimKF
+   ```bash
+   ./RadarSimKF
+   ```
+
+  ## Usage
+  
+  After running the simulation, the program will output a series of radar sweeps, each representing a time step in the tracking process. Targets are shown by 'X' on the radar grid,       and their positions update with each sweep, illustrating the tracking capabilities of the Kalman filter.​
+  
+  Example Output:
+
+    Radar Sweep: - - - - - X - - - - - - - - - - - - - - - - X - - - - X - - X - - - - X - - - -
+    Step 1 complete
+    Radar Sweep: - - - - - X - - - - - - - - - - - - - - - - X - - - - X - - X - - - - X - - - -
+    Step 2 complete
+
+  ## Contributing
+
+  To contribute:
+
+  1. Fork the Repository: Create your own fork of the project.
+  2. Create a Branch: Develop your feature or fix on a separate branch.
+  3. Submit a Pull Request: Once your changes are complete, submit a pull request to merge them into the main repository.
+
+    
+
+
+
+
